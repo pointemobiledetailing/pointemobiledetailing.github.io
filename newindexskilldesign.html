@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mobile Car Detailing Grosse Pointe MI | Pointe Mobile Detailing</title>
+<meta name="description" content="Best mobile car detailing in Grosse Pointe, Michigan. Premium interior & exterior detailing brought to you. Signature Shine starting at $165. 100% satisfaction guaranteed.">
+<meta name="keywords" content="mobile detailing Grosse Pointe, car detailing Grosse Pointe MI, mobile car wash Grosse Pointe, auto detailing Grosse Pointe, Signature Shine detailing">
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="US-MI">
+<meta name="geo.placename" content="Grosse Pointe">
+<link rel="canonical" href="https://pointemobiledetailing.com">
+<meta property="og:title" content="Mobile Car Detailing Grosse Pointe MI | Pointe Mobile Detailing">
+<meta property="og:description" content="Best mobile car detailing in Grosse Pointe. Signature Shine starting at $165. We come to you!">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pointemobiledetailing.com">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoDetailing","name":"Pointe Mobile Detailing","description":"Best mobile car detailing in Grosse Pointe, Michigan.","url":"https://pointemobiledetailing.com","email":"pointemobiledetailing@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Grosse Pointe","addressRegion":"MI","addressCountry":"US"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Detailing Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Signature Shine","description":"Full hand wash, premium wax, deep wheel cleaning, full interior detail"},"price":"165","priceCurrency":"USD"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Interior Refresh","description":"Full vacuum, steam clean, surface sanitization, spot cleaning"},"price":"95","priceCurrency":"USD"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Exterior Clean","description":"Hand wash, bug/tar removal, wheel cleaning, spray sealant"},"price":"65","priceCurrency":"USD"}]},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"2"}}</script>
+<link rel="icon" type="image/png" href="images/Logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+:root{
+  --gold:#c8a96e;--gold-hi:#dfc088;--gold-lo:rgba(200,169,110,0.12);--gold-line:rgba(200,169,110,0.18);
+  --void:#050505;--deep:#090909;--panel:#0f0f0f;--surface:#151515;--lift:#1d1d1d;
+  --cream:#ede9e1;--cream-m:rgba(237,233,225,0.45);--cream-g:rgba(237,233,225,0.1);
+  --ease:cubic-bezier(0.16,1,0.3,1);--ease2:cubic-bezier(0.22,0.61,0.36,1);
+  --nav-h:68px;--pad:clamp(1.2rem,5vw,3.5rem);--max:1200px;
+}
+body{background:var(--void);color:var(--cream);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer}
+::selection{background:var(--gold);color:var(--void)}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--void)}
+::-webkit-scrollbar-thumb{background:var(--gold)}
+
+/* GRAIN */
+body::after{content:'';position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:.28;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='.4'/%3E%3C/svg%3E")}
+
+/* PAGES */
+.page{display:none;min-height:100vh}
+.page.active{display:block}
+.page-enter{animation:pgIn .65s var(--ease) both}
+@keyframes pgIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;height:var(--nav-h);
+  display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);transition:background .45s,border .45s}
+nav.scrolled{background:rgba(5,5,5,0.93);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--gold-line)}
+.nlogo{display:flex;align-items:center;gap:13px;cursor:pointer}
+.nlogo-img{width:42px;height:42px;object-fit:contain;flex-shrink:0;filter:drop-shadow(0 0 8px rgba(200,169,110,0.35))}
+.nwords{display:flex;flex-direction:column;gap:2px}
+.nname{font-family:'Cormorant Garamond',serif;font-size:.98rem;font-weight:400;letter-spacing:.03em;line-height:1}
+.nsub{font-size:.46rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.nlinks{display:flex;gap:2.5rem;list-style:none;align-items:center}
+.nlinks a{color:var(--cream-m);font-size:.58rem;font-weight:400;letter-spacing:.2em;text-transform:uppercase;
+  cursor:pointer;transition:color .25s;position:relative;padding-bottom:2px}
+.nlinks a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--gold);transition:width .3s var(--ease)}
+.nlinks a:hover,.nlinks a.active{color:var(--cream)}
+.nlinks a:hover::after,.nlinks a.active::after{width:100%}
+.nbtn{background:transparent!important;color:var(--gold)!important;border:1px solid var(--gold-line)!important;
+  padding:8px 20px!important;font-size:.58rem!important;font-weight:400!important;letter-spacing:.2em!important;
+  text-transform:uppercase!important;transition:all .3s!important}
+.nbtn:hover{background:var(--gold)!important;color:var(--void)!important;border-color:var(--gold)!important}
+.ham{display:none;flex-direction:column;gap:6px;cursor:pointer;padding:8px;background:none;border:none}
+.ham span{display:block;width:24px;height:1px;background:var(--cream);transition:.35s;transform-origin:center}
+.ham.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.ham.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.ham.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.drawer{display:none;position:fixed;inset:0;background:var(--void);z-index:850;
+  flex-direction:column;justify-content:center;padding:4rem var(--pad);gap:.15rem}
+.drawer.open{display:flex}
+.drawer a{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,8vw,3.8rem);font-weight:300;
+  color:rgba(237,233,225,0.3);cursor:pointer;padding:.3rem 0;
+  border-bottom:1px solid rgba(255,255,255,0.03);transition:color .2s,padding .2s;letter-spacing:.01em}
+.drawer a:hover{color:var(--gold);padding-left:.4rem}
+.drawer-cta{margin-top:2.5rem;display:inline-block;background:var(--gold)!important;color:var(--void)!important;
+  font-family:'DM Sans',sans-serif!important;font-size:.6rem!important;font-weight:500!important;
+  letter-spacing:.22em!important;text-transform:uppercase!important;padding:14px 32px!important}
+
+/* BUTTONS */
+.btn{display:inline-block;padding:13px 34px;font-size:.59rem;font-weight:400;letter-spacing:.2em;
+  text-transform:uppercase;cursor:pointer;border:none;transition:all .35s var(--ease)}
+.btn-g{background:var(--gold);color:var(--void)}
+.btn-g:hover{background:var(--gold-hi);transform:translateY(-2px);box-shadow:0 14px 38px rgba(200,169,110,0.22)}
+.btn-o{background:transparent;color:var(--cream);border:1px solid var(--gold-line)}
+.btn-o:hover{border-color:var(--gold);color:var(--gold)}
+.btn-lg{padding:16px 44px;font-size:.63rem}
+
+/* TYPE */
+.eye{display:inline-flex;align-items:center;gap:12px;font-size:.52rem;font-weight:500;
+  letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:1.3rem}
+.eye::before{content:'';width:22px;height:1px;background:var(--gold);flex-shrink:0}
+.eye-c{justify-content:center}
+.h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,7.5vw,6rem);font-weight:300;line-height:.95;letter-spacing:-.02em}
+.h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4.5vw,3.5rem);font-weight:300;line-height:1.05;letter-spacing:-.01em}
+.h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,2.5vw,2rem);font-weight:300;line-height:1.1}
+em{font-style:italic;color:var(--gold)}
+.rule{width:32px;height:1px;background:var(--gold);margin:1.5rem 0}
+
+/* REVEAL */
+.r{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.r.on{opacity:1;transform:none}
+.rl{opacity:0;transform:translateX(-24px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rl.on{opacity:1;transform:none}
+.rs{opacity:0;transform:scale(.97);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rs.on{opacity:1;transform:scale(1)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+
+/* ═══════════════════════════
+   AMBIENT GOLD GLOW EFFECTS
+═══════════════════════════ */
+
+/* Floating gold orb — reusable pseudo-element glow */
+.glow-section{position:relative}
+.glow-section::before{
+  content:'';position:absolute;
+  width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(200,169,110,0.07) 0%,transparent 70%);
+  pointer-events:none;z-index:0;
+}
+.glow-tl::before{top:-100px;left:-100px}
+.glow-tr::before{top:-100px;right:-100px}
+.glow-bl::before{bottom:-100px;left:-100px}
+.glow-br::before{bottom:-100px;right:-100px}
+
+/* Why section gold card glow on hover */
+.wc{position:relative;isolation:isolate}
+.wc-glow{
+  position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse at 50% 100%,rgba(200,169,110,0.08) 0%,transparent 70%);
+  opacity:0;transition:opacity .5s;
+}
+.wc:hover .wc-glow{opacity:1}
+
+/* Marquee gold tint on dots */
+.mq-dot{box-shadow:0 0 6px rgba(200,169,110,0.6)}
+
+/* Gold pulse on pkg star featured */
+.ps-card::after{
+  content:'';position:absolute;inset:-1px;border-radius:0;
+  background:linear-gradient(135deg,rgba(200,169,110,0.15),transparent 50%,rgba(200,169,110,0.05));
+  pointer-events:none;animation:psPulse 4s ease-in-out infinite alternate;
+}
+@keyframes psPulse{from{opacity:.4}to{opacity:1}}
+
+/* Testimonial card glow */
+.tc::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:3px;
+  background:linear-gradient(to right,transparent,var(--gold),transparent);
+  transform:scaleX(0);transform-origin:center;transition:transform .5s var(--ease);
+}
+.tc{position:relative}
+.tc:hover::after{transform:scaleX(1)}
+
+/* Booking highlight shimmer */
+.bk-hl{position:relative;overflow:hidden}
+.bk-hl::before{
+  content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;
+  background:linear-gradient(to right,transparent,rgba(200,169,110,0.04),transparent);
+  animation:shimmer 4s ease-in-out 2s infinite;
+}
+@keyframes shimmer{0%{left:-100%}100%{left:200%}}
+
+/* About image corner accent glow */
+.about-vis{isolation:isolate}
+.about-vis::after{
+  content:'';position:absolute;bottom:-40px;right:-40px;
+  width:280px;height:280px;border-radius:50%;
+  background:radial-gradient(circle,rgba(200,169,110,0.06) 0%,transparent 70%);
+  pointer-events:none;z-index:-1;
+}
+
+/* ═════════════════════════════════
+   HERO — SPLIT CINEMATIC SCREEN
+═════════════════════════════════ */
+.hero{height:100svh;min-height:600px;position:relative;display:flex;align-items:flex-end;overflow:hidden}
+
+/* Full-bleed split: left 61.8% photo, right 38.2% darker — golden ratio */
+.hero-split{position:absolute;inset:0;display:grid;grid-template-columns:61.8fr 38.2fr}
+.hs-left,.hs-right{position:relative;overflow:hidden}
+.hs-left img,.hs-right img{
+  width:100%;height:100%;object-fit:cover;
+  transform:scale(1.08);animation:drift 9s var(--ease) forwards;
+}
+.hs-left img{object-position:60% center}
+.hs-right img{animation-delay:.3s;object-position:center 20%}
+@keyframes drift{to{transform:scale(1)}}
+
+/* Golden ratio vignette: heavy left-third darkness for text, open right */
+.hero-veil{position:absolute;inset:0;
+  background:linear-gradient(105deg,
+    rgba(5,5,5,0.92) 0%,
+    rgba(5,5,5,0.72) 25%,
+    rgba(5,5,5,0.3) 50%,
+    rgba(5,5,5,0.55) 75%,
+    rgba(5,5,5,0.82) 100%
+  )}
+.hero-veil-b{position:absolute;inset:0;
+  background:linear-gradient(to bottom,rgba(5,5,5,0.55) 0%,transparent 20%,transparent 50%,rgba(5,5,5,0.98) 100%)}
+
+/* Ambient gold glow — floats behind text at lower left */
+.hero-glow{
+  position:absolute;bottom:0;left:0;z-index:2;
+  width:55%;height:70%;pointer-events:none;
+  background:radial-gradient(ellipse at 20% 85%,rgba(200,169,110,0.12) 0%,transparent 65%);
+  animation:glowBreath 5s ease-in-out 1.5s infinite alternate;
+}
+@keyframes glowBreath{from{opacity:.6}to{opacity:1}}
+
+/* Seam removed — replaced by radial glow orb */
+.hero-seam{display:none}
+
+/* Content */
+.hero-body{
+  position:relative;z-index:3;width:100%;
+  padding:0 var(--pad) clamp(3rem,7vw,5.5rem);
+  max-width:var(--max);margin:0 auto;
+  /* Rule of thirds: content occupies left 2/3 column */
+}
+.hero-body-inner{
+  max-width:560px; /* ~46% of max-w = left 1/3 to 1/2 column */
+}
+.hero-kicker{font-size:.5rem;font-weight:400;letter-spacing:.38em;text-transform:uppercase;
+  color:var(--gold);display:flex;align-items:center;gap:14px;margin-bottom:1.8rem;
+  opacity:0;animation:up .9s var(--ease) .5s forwards}
+.hero-kicker::before{content:'';width:32px;height:1px;background:var(--gold)}
+.hero-ht{margin-bottom:1rem;opacity:0;animation:up 1s var(--ease) .75s forwards}
+.hero-ht .ln{display:block;overflow:hidden}
+.hero-ht .ln span{display:block;animation:slide 1s var(--ease) both}
+.hero-ht .ln:nth-child(1) span{animation-delay:.75s}
+.hero-ht .ln:nth-child(2) span{animation-delay:1s}
+@keyframes slide{from{transform:translateY(105%)}to{transform:none}}
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hero-sub{font-size:.68rem;font-weight:300;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--cream-m);margin-bottom:2.8rem;opacity:0;animation:up .9s var(--ease) 1.1s forwards}
+.hero-acts{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:up .9s var(--ease) 1.3s forwards}
+
+/* Side pills */
+.hero-pills{position:absolute;right:var(--pad);bottom:clamp(3rem,8vw,5rem);z-index:4;
+  display:flex;flex-direction:column;gap:2px;
+  opacity:0;animation:up .9s var(--ease) 1.6s forwards}
+.hp{background:rgba(5,5,5,0.8);backdrop-filter:blur(16px);
+  border:1px solid var(--gold-line);border-left:2px solid var(--gold);
+  padding:.85rem 1.3rem;min-width:118px}
+.hp-n{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--gold);line-height:1}
+.hp-l{font-size:.44rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cream-m);margin-top:4px}
+
+/* Scroll line */
+.hscroll{
+  position:absolute;bottom:2.5rem;
+  right:calc(var(--pad) + 130px); /* sits to left of pills */
+  z-index:4;
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  opacity:0;animation:up .9s ease 2.1s forwards;
+}
+.hscroll-line{width:1px;height:44px;background:rgba(200,169,110,.12);position:relative;overflow:hidden}
+.hscroll-line::after{content:'';position:absolute;top:-100%;left:0;width:100%;height:100%;
+  background:linear-gradient(to bottom,transparent,var(--gold));animation:spulse 2s ease-in-out 2.2s infinite}
+@keyframes spulse{0%{top:-100%}100%{top:200%}}
+.hscroll p{font-size:.43rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(237,233,225,.3)}
+@media(max-width:768px){.hscroll{display:none}}
+
+/* ═════════════════════════════════
+   MARQUEE
+═════════════════════════════════ */
+.mq{overflow:hidden;border-top:1px solid var(--gold-line);border-bottom:1px solid var(--gold-line);background:var(--deep);padding:.8rem 0}
+.mq-inner{display:flex;width:max-content;animation:mq 28s linear infinite}
+.mq-inner:hover{animation-play-state:paused}
+.mq-item{display:flex;align-items:center;gap:.7rem;padding:0 1.6rem;
+  font-size:.52rem;font-weight:400;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--cream-m);white-space:nowrap}
+.mq-dot{width:4px;height:4px;background:var(--gold);transform:rotate(45deg);flex-shrink:0}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ═════════════════════════════════
+   ABOUT
+═════════════════════════════════ */
+.about{max-width:var(--max);margin:0 auto;padding:clamp(5rem,12vw,10rem) var(--pad)}
+.about-grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(3rem,7vw,7rem);align-items:center}
+.about-copy p{color:var(--cream-m);font-size:.9rem;line-height:2;margin-bottom:1.3rem}
+.about-vis{position:relative;height:540px}
+.ai-main{position:absolute;top:0;right:0;width:80%;height:85%;object-fit:cover}
+.ai-accent{position:absolute;bottom:0;left:0;width:48%;height:52%;object-fit:cover;border:4px solid var(--void)}
+.ai-hline{position:absolute;bottom:-1px;right:0;width:80%;height:2px;background:linear-gradient(to left,var(--gold),transparent)}
+.ai-vline{position:absolute;top:0;right:-1px;width:2px;height:85%;background:linear-gradient(to bottom,var(--gold),transparent)}
+
+/* ═════════════════════════════════
+   IMAGE BAND
+═════════════════════════════════ */
+.band{height:52vh;min-height:300px;display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:3px;overflow:hidden}
+.band-c{overflow:hidden;position:relative}
+.band-c img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.band:hover .band-c img{transform:scale(1.04)}
+.band-c:nth-child(2) img{object-position:center 30%}
+.band-veil{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 55%,rgba(5,5,5,.6) 100%)}
+
+/* ═════════════════════════════════
+   WHY
+═════════════════════════════════ */
+.why{padding:clamp(5rem,10vw,8rem) var(--pad);background:var(--deep)}
+.why-in{max-width:var(--max);margin:0 auto}
+.why-head{margin-bottom:3rem}
+.why-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(200,169,110,.07)}
+.wc{background:var(--panel);padding:2.8rem 2.2rem;transition:background .4s;position:relative;overflow:hidden}
+.wc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+  background:linear-gradient(to right,var(--gold),transparent);
+  transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.wc:hover{background:var(--surface)}
+.wc:hover::after{transform:scaleX(1)}
+.wc-n{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;
+  color:rgba(200,169,110,.07);line-height:1;margin-bottom:1.4rem;transition:color .4s}
+.wc:hover .wc-n{color:rgba(200,169,110,.15)}
+.wc h3{font-family:'Cormorant Garamond',serif;font-size:1.22rem;font-weight:400;margin-bottom:.8rem}
+.wc p{color:var(--cream-m);font-size:.84rem;line-height:1.85}
+
+/* ═════════════════════════════════
+   TESTIMONIALS
+═════════════════════════════════ */
+.testi{padding:clamp(5rem,10vw,8rem) var(--pad)}
+.testi-in{max-width:var(--max);margin:0 auto}
+.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.8rem}
+.tc{background:var(--panel);overflow:hidden;transition:transform .45s var(--ease)}
+.tc:hover{transform:translateY(-8px)}
+.tc-photo{height:255px;overflow:hidden;position:relative}
+.tc-photo img{width:100%;height:100%;object-fit:cover;transition:transform .65s var(--ease)}
+.tc:hover .tc-photo img{transform:scale(1.06)}
+.tc-photo-veil{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 35%,rgba(15,15,15,.8) 100%)}
+.tc-body{padding:1.8rem 2rem}
+.tc-stars{color:var(--gold);font-size:.72rem;letter-spacing:.08em;margin-bottom:.9rem}
+.tc-q{color:var(--cream-m);font-style:italic;line-height:1.9;font-size:.87rem;margin-bottom:1.2rem;
+  border-left:2px solid var(--gold-line);padding-left:1rem}
+.tc-name{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:400}
+.tc-tag{font-size:.5rem;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;margin-top:3px}
+
+/* ═════════════════════════════════
+   SERVICES PAGE
+═════════════════════════════════ */
+.shero{padding:calc(var(--nav-h) + 5rem) var(--pad) 4rem;background:var(--deep);text-align:center;position:relative;overflow:hidden}
+.shero-bg{position:absolute;inset:0;opacity:.07;background-image:url('images/IMG_2989.PNG');background-size:cover;background-position:center;filter:blur(4px)}
+.shero-c{position:relative;z-index:1}
+.shero p{color:var(--cream-m);max-width:560px;margin:.8rem auto 0;font-size:.89rem}
+.sdiv{position:absolute;bottom:0;left:var(--pad);right:var(--pad);height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent)}
+
+.pkgs{max-width:var(--max);margin:0 auto;padding:4rem var(--pad) 6rem}
+.ps-wrap{margin-bottom:1.5rem}
+.ps-badge{display:inline-block;background:var(--gold);color:var(--void);font-size:.5rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;padding:7px 18px}
+.ps-card{background:var(--panel);border:1px solid rgba(200,169,110,.28);position:relative;overflow:hidden}
+.ps-glow{position:absolute;inset:0;background:radial-gradient(ellipse at top right,rgba(200,169,110,.06) 0%,transparent 65%);pointer-events:none}
+.ps-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;gap:2rem;padding:2.8rem 3rem;align-items:start}
+.ps-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3.5vw,2.9rem);font-weight:300;margin-bottom:.4rem}
+.ps-time{font-size:.53rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:1.2rem}
+.ps-desc{color:var(--cream-m);font-size:.87rem;line-height:1.92;max-width:520px;margin-bottom:1.6rem}
+.ps-list{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem 1.8rem;margin-bottom:2rem}
+.ps-list li{font-size:.78rem;color:var(--cream);opacity:.68;display:flex;align-items:center;gap:.5rem}
+.ps-list li::before{content:'◆';color:var(--gold);font-size:.42rem;flex-shrink:0}
+.ps-price-block{text-align:right;flex-shrink:0}
+.ps-price{font-family:'Cormorant Garamond',serif;font-size:4.2rem;font-weight:300;color:var(--gold);line-height:1;display:block}
+.ps-pnote{font-size:.5rem;letter-spacing:.18em;color:var(--cream-m);text-transform:uppercase;margin-bottom:1.5rem;display:block}
+.pkg-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(200,169,110,.07)}
+.pkg{background:var(--panel);padding:2.2rem;transition:background .3s}
+.pkg:hover{background:var(--surface)}
+.pkg-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.8rem;padding-bottom:.9rem;border-bottom:1px solid rgba(255,255,255,.04)}
+.pkg h3{font-family:'Cormorant Garamond',serif;font-size:1.42rem;font-weight:400}
+.pkg-pc{text-align:right}
+.pkg-pc span{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--gold)}
+.pkg-pc small{display:block;font-size:.48rem;letter-spacing:.14em;color:var(--cream-m);text-transform:uppercase}
+.pkg-tm{font-size:.53rem;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;margin-bottom:1rem}
+.pkg p{color:var(--cream-m);font-size:.84rem;line-height:1.85;margin-bottom:1.4rem}
+.pkg .btn{font-size:.55rem;padding:10px 22px}
+
+/* ═════════════════════════════════
+   GALLERY PAGE
+═════════════════════════════════ */
+.ghero{height:42vh;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;margin-top:var(--nav-h)}
+.ghero-img{position:absolute;inset:0}
+.ghero-img img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.ghero-veil{position:absolute;inset:0;background:rgba(5,5,5,.58)}
+.ghero-c{position:relative;z-index:1;text-align:center}
+.gbody{max-width:1380px;margin:0 auto;padding:3rem var(--pad) 6rem}
+.gg{columns:3;column-gap:8px}
+.gc{break-inside:avoid;margin-bottom:8px;overflow:hidden;position:relative;cursor:zoom-in}
+.gc img{width:100%;display:block;transition:transform .65s var(--ease)}
+.gc:hover img{transform:scale(1.04)}
+.gc-lbl{position:absolute;bottom:0;left:0;right:0;padding:.7rem 1rem;
+  background:linear-gradient(to top,rgba(5,5,5,.75),transparent);
+  font-size:.5rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--cream-m);opacity:0;transition:opacity .3s}
+.gc:hover .gc-lbl{opacity:1}
+
+/* ═════════════════════════════════
+   GUARANTEE PAGE
+═════════════════════════════════ */
+.gu-hero{min-height:36vh;display:flex;align-items:center;justify-content:center;margin-top:var(--nav-h);background:var(--deep);border-bottom:1px solid var(--gold-line)}
+.gu-hero-in{text-align:center;padding:4rem var(--pad)}
+.gu-emblem{width:64px;height:64px;border:1px solid var(--gold-line);display:flex;align-items:center;justify-content:center;margin:0 auto 1.8rem;transform:rotate(45deg)}
+.gu-emblem-i{font-size:1.1rem;transform:rotate(-45deg);color:var(--gold)}
+.gu-body{max-width:820px;margin:0 auto;padding:4rem var(--pad) 6rem}
+.gu-block{background:var(--panel);border:1px solid rgba(200,169,110,.1);padding:2.5rem;margin-bottom:2rem}
+.gu-block p{color:var(--cream-m);font-size:.89rem;line-height:2;margin-bottom:1rem}
+.gu-block p:last-child{margin:0}
+.gu-block strong{color:var(--gold);font-weight:400}
+.gu-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(200,169,110,.07);margin-bottom:2.5rem}
+.gp{background:var(--panel);padding:2.2rem 1.8rem;text-align:center;transition:background .3s}
+.gp:hover{background:var(--surface)}
+.gp-n{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:300;color:rgba(200,169,110,.16);margin-bottom:.8rem}
+.gp h4{font-size:.56rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem}
+.gp p{color:var(--cream-m);font-size:.82rem;line-height:1.75}
+.gu-cta{text-align:center}
+
+/* ═════════════════════════════════
+   BOOKING PAGE
+═════════════════════════════════ */
+.bkhero{height:34vh;min-height:240px;position:relative;display:flex;align-items:center;justify-content:center;margin-top:var(--nav-h);overflow:hidden}
+.bkhero-img{position:absolute;inset:0}
+.bkhero-img img{width:100%;height:100%;object-fit:cover;object-position:center 45%}
+.bkhero-veil{position:absolute;inset:0;background:rgba(5,5,5,.65)}
+.bkhero-c{position:relative;z-index:1;text-align:center}
+.bkbody{max-width:1020px;margin:0 auto;padding:3.5rem var(--pad) 5rem}
+.bk-hl{background:linear-gradient(135deg,rgba(200,169,110,.08) 0%,var(--panel) 100%);
+  border:1px solid rgba(200,169,110,.28);padding:2rem 2.4rem;margin-bottom:1.8rem;
+  display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.bk-hl h3{font-family:'Cormorant Garamond',serif;font-size:1.48rem;font-weight:300;margin-bottom:.3rem}
+.bk-hl p{color:var(--cream-m);font-size:.84rem}
+.bk-price{text-align:right}
+.bk-price span{font-family:'Cormorant Garamond',serif;font-size:2.3rem;font-weight:300;color:var(--gold)}
+.bk-price small{display:block;font-size:.5rem;letter-spacing:.16em;color:var(--cream-m);text-transform:uppercase}
+.bk-meta{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(200,169,110,.07);margin-bottom:1.8rem}
+.bk-cell{background:var(--panel);padding:2rem}
+.bk-cell h4{font-size:.52rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem}
+.bk-cell p{color:var(--cream-m);font-size:.86rem;line-height:1.82}
+.bk-cal{background:var(--panel);border:1px solid var(--gold-line);overflow:hidden}
+.bk-cal-head{padding:1.6rem 2rem;border-bottom:1px solid var(--gold-line);
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.bk-cal-head h3{font-family:'Cormorant Garamond',serif;font-size:1.38rem;font-weight:300;margin-bottom:.2rem}
+.bk-cal-head p{color:var(--cream-m);font-size:.8rem}
+.cal{width:100%;min-height:700px;border:none;display:block;background:#fff}
+@media(max-width:600px){.cal{min-height:600px}.bk-cal-head{flex-direction:column;align-items:flex-start}}
+
+/* FOOTER */
+footer{background:var(--void);border-top:1px solid rgba(200,169,110,.07);padding:clamp(3rem,7vw,5rem) var(--pad) 2rem}
+.ft{max-width:var(--max);margin:0 auto}
+.ft-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:3.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.04);margin-bottom:1.5rem}
+.ft-icon{width:30px;height:30px;border:1px solid rgba(200,169,110,.35);transform:rotate(45deg);display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem}
+.ft-icon-i{width:8px;height:8px;background:var(--gold);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%)}
+.ft-brand-n{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:300;margin-bottom:.65rem;display:block}
+.ft-brand p{color:rgba(237,233,225,.22);font-size:.8rem;line-height:1.85;max-width:240px}
+.ft-col h5{font-size:.5rem;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem}
+.ft-col ul{list-style:none}
+.ft-col li{margin-bottom:.52rem}
+.ft-col a,.ft-col li{color:rgba(237,233,225,.28);font-size:.8rem;cursor:pointer;transition:color .25s}
+.ft-col a:hover{color:var(--gold)}
+.ft-geo{color:rgba(237,233,225,.16);font-size:.62rem;letter-spacing:.06em;text-align:center;padding:1rem 0;border-bottom:1px solid rgba(255,255,255,.03);margin-bottom:1.2rem}
+.ft-base{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+.ft-base p{color:rgba(237,233,225,.14);font-size:.62rem;letter-spacing:.04em}
+
+/* ═════════ RESPONSIVE ═════════ */
+@media(max-width:1024px){
+  .about-grid{grid-template-columns:1fr}
+  .about-vis{height:400px;order:-1}
+  .hero-pills{display:none}
+  .ps-grid{grid-template-columns:1fr;text-align:center}
+  .ps-price-block{text-align:center}
+  .ft-top{grid-template-columns:1fr 1fr}
+  .ft-brand{grid-column:1/-1}
+}
+@media(max-width:768px){
+  .nlinks{display:none}
+  .ham{display:flex}
+  .why-cards,.gu-pillars{grid-template-columns:1fr}
+  .bk-meta{grid-template-columns:1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .gg{columns:2}
+  .ft-top{grid-template-columns:1fr;gap:1.8rem}
+  .bk-hl{flex-direction:column}
+  .bk-price{text-align:left}
+  .band{grid-template-columns:1fr 1fr;height:38vh}
+  .band-c:last-child{display:none}
+  .pkg-grid{grid-template-columns:1fr}
+  .hero-split{grid-template-columns:1fr}
+  .hs-right{display:none}
+}
+@media(max-width:480px){
+  .hero-acts{flex-direction:column;align-items:flex-start}
+  .hero-acts .btn{width:100%;max-width:260px;text-align:center}
+  .gg{columns:1}
+  .ft-base{flex-direction:column;text-align:center}
+  .ps-grid{padding:1.8rem}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nlogo" onclick="go('home')">
+    <img class="nlogo-img" src="images/Logo.png" alt="Pointe Mobile Detailing logo">
+    <div class="nwords">
+      <span class="nname">Pointe Mobile Detailing</span>
+      <span class="nsub">Grosse Pointe · Michigan</span>
+    </div>
+  </a>
+  <ul class="nlinks">
+    <li><a data-page="home" class="active" onclick="go('home')">Home</a></li>
+    <li><a data-page="services" onclick="go('services')">Services</a></li>
+    <li><a data-page="gallery" onclick="go('gallery')">Gallery</a></li>
+    <li><a data-page="guarantee" onclick="go('guarantee')">Guarantee</a></li>
+    <li><a class="nbtn" onclick="go('booking')">Book Now</a></li>
+  </ul>
+  <button class="ham" id="ham" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="drawer" id="drawer">
+  <a data-drawer="home" onclick="go('home')">Home</a>
+  <a data-drawer="services" onclick="go('services')">Services</a>
+  <a data-drawer="gallery" onclick="go('gallery')">Gallery</a>
+  <a data-drawer="guarantee" onclick="go('guarantee')">Guarantee</a>
+  <a class="drawer-cta" onclick="go('booking')">Book Now</a>
+</div>
+
+<!-- ══ HOME ══ -->
+<div class="page active" id="page-home">
+  <section class="hero">
+    <div class="hero-split">
+      <div class="hs-left"><img src="images/IMG_2989.PNG" alt="Cadillac CT5-V mobile detailing Grosse Pointe" loading="eager"></div>
+      <div class="hs-right"><img src="images/IMG_1723.PNG" alt="Premium SRT interior detailing" loading="eager"></div>
+    </div>
+    <div class="hero-veil"></div>
+    <div class="hero-veil-b"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-body">
+      <div class="hero-body-inner">
+      <p class="hero-kicker">Grosse Pointe, Michigan</p>
+      <h1 class="hero-ht h1">
+        <span class="ln"><span>Pointe Mobile</span></span>
+        <span class="ln"><span><em>Detailing</em></span></span>
+      </h1>
+      <p class="hero-sub">Premium Mobile Car Detailing &nbsp;·&nbsp; We Come to You</p>
+      <div class="hero-acts">
+        <a class="btn btn-g btn-lg" onclick="go('booking')">Book Your Detail</a>
+        <a class="btn btn-o" onclick="go('services')">View Services</a>
+      </div>
+      </div><!-- /hero-body-inner -->
+    </div>
+    <div class="hero-pills">
+      <div class="hp"><div class="hp-n">5★</div><div class="hp-l">Rated</div></div>
+      <div class="hp"><div class="hp-n">$165</div><div class="hp-l">Signature Shine</div></div>
+      <div class="hp"><div class="hp-n">100%</div><div class="hp-l">Guaranteed</div></div>
+    </div>
+    <div class="hscroll">
+      <div class="hscroll-line"></div>
+      <p>Scroll</p>
+    </div>
+  </section>
+
+  <div class="mq">
+    <div class="mq-inner">
+      <span class="mq-item"><span class="mq-dot"></span>Premium Mobile Detailing</span>
+      <span class="mq-item"><span class="mq-dot"></span>Grosse Pointe, MI</span>
+      <span class="mq-item"><span class="mq-dot"></span>Signature Shine from $165</span>
+      <span class="mq-item"><span class="mq-dot"></span>We Come to You</span>
+      <span class="mq-item"><span class="mq-dot"></span>100% Satisfaction Guaranteed</span>
+      <span class="mq-item"><span class="mq-dot"></span>Interior &amp; Exterior Detail</span>
+      <span class="mq-item"><span class="mq-dot"></span>Same-Week Appointments</span>
+      <span class="mq-item"><span class="mq-dot"></span>Premium Mobile Detailing</span>
+      <span class="mq-item"><span class="mq-dot"></span>Grosse Pointe, MI</span>
+      <span class="mq-item"><span class="mq-dot"></span>Signature Shine from $165</span>
+      <span class="mq-item"><span class="mq-dot"></span>We Come to You</span>
+      <span class="mq-item"><span class="mq-dot"></span>100% Satisfaction Guaranteed</span>
+      <span class="mq-item"><span class="mq-dot"></span>Interior &amp; Exterior Detail</span>
+      <span class="mq-item"><span class="mq-dot"></span>Same-Week Appointments</span>
+    </div>
+  </div>
+
+  <section class="about glow-section glow-bl">
+    <div class="about-grid">
+      <div class="about-copy r">
+        <p class="eye">About Us</p>
+        <h2 class="h2">Grosse Pointe's Premier <em>Mobile Detailing</em></h2>
+        <div class="rule"></div>
+        <p>At Pointe Mobile Detailing, we are passionate about providing the best mobile car detailing service for your vehicle. With unmatched attention to detail and the use of high-quality products, we take pride in delivering results that enhance both the appearance and longevity of your car.</p>
+        <p>Backed by our 100% customer satisfaction guarantee, every service is performed with care, precision, and a commitment to exceeding your expectations. We understand how valuable your time is, which is why we bring convenience and top-quality vehicle care directly to your doorstep.</p>
+        <a class="btn btn-g" onclick="go('services')">View Services</a>
+      </div>
+      <div class="about-vis r d2">
+        <img class="ai-main" src="images/fionasilverado.jpg" alt="Mobile detailing Grosse Pointe Silverado">
+        <img class="ai-accent" src="images/IMG_1723.PNG" alt="Interior detailing result">
+        <div class="ai-hline"></div>
+        <div class="ai-vline"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band rs">
+    <div class="band-c"><img src="images/paulosrt.jpg" alt="Exterior detailing result"><div class="band-veil"></div></div>
+    <div class="band-c"><img src="images/IMG_2989.PNG" alt="Cadillac CT5-V detailing"><div class="band-veil"></div></div>
+    <div class="band-c"><img src="images/IMG_2720.PNG" alt="Ford Explorer detailing"><div class="band-veil"></div></div>
+  </div>
+
+  <section class="why glow-section glow-tr">
+    <div class="why-in">
+      <div class="why-head">
+        <p class="eye r">Why Choose Us</p>
+        <h2 class="h2 r d1">The Pointe <em>Difference</em></h2>
+      </div>
+      <div class="why-cards">
+        <div class="wc r d1"><div class="wc-glow"></div><div class="wc-n">01</div><h3>We Come to You</h3><p>No waiting rooms, no wasted time. We arrive fully equipped at your home, office, or anywhere in Grosse Pointe.</p></div>
+        <div class="wc r d2"><div class="wc-glow"></div><div class="wc-n">02</div><h3>Premium Products</h3><p>Only the finest pH-balanced soaps, microfiber towels, and professional-grade equipment touch your vehicle.</p></div>
+        <div class="wc r d3"><div class="wc-glow"></div><div class="wc-n">03</div><h3>100% Guaranteed</h3><p>Not satisfied? Contact us within 24 hours and we'll return to address any concerns at no extra cost.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testi glow-section glow-tl">
+    <div class="testi-in">
+      <p class="eye r">Client Testimonials</p>
+      <h2 class="h2 r d1">What Clients <em>Say</em></h2>
+      <div class="testi-grid">
+        <div class="tc r d1">
+          <div class="tc-photo"><img src="images/fionasilverado.jpg" alt="Chevy Silverado detail"><div class="tc-photo-veil"></div></div>
+          <div class="tc-body">
+            <div class="tc-stars">★★★★★</div>
+            <p class="tc-q">"I booked Pointe Mobile Detailing for my Chevy Silverado, and it was a 10/10 experience. Communication was smooth and I was very happy with the results!"</p>
+            <div class="tc-name">Fiona S.</div><div class="tc-tag">Chevy Silverado</div>
+          </div>
+        </div>
+        <div class="tc r d2">
+          <div class="tc-photo"><img src="images/IMG_1723.PNG" alt="Dodge Durango SRT interior"><div class="tc-photo-veil"></div></div>
+          <div class="tc-body">
+            <div class="tc-stars">★★★★★</div>
+            <p class="tc-q">"Pointe Mobile Detailing did great work on my 392 Durango. Impressed by the results and will book again!"</p>
+            <div class="tc-name">Paolo M.</div><div class="tc-tag">Dodge Durango SRT 392</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer><div class="ft" id="ft-home"></div></footer>
+</div>
+
+<!-- ══ SERVICES ══ -->
+<div class="page" id="page-services">
+  <section class="shero">
+    <div class="shero-bg" aria-hidden="true"></div>
+    <div class="shero-c">
+      <p class="eye eye-c">Our Services</p>
+      <h1 class="h2">Detailing <em>Packages</em></h1>
+      <p>From quick refreshes to our premium Signature Shine. Choose the perfect package for your vehicle.</p>
+    </div>
+    <div class="sdiv"></div>
+  </section>
+  <section class="pkgs">
+    <div class="ps-wrap r">
+      <div class="ps-badge">★ Most Popular Choice</div>
+      <div class="ps-card">
+        <div class="ps-glow"></div>
+        <div class="ps-grid">
+          <div>
+            <h3 class="ps-title">Signature <em>Shine</em></h3>
+            <p class="ps-time">⏱ 75 minutes of premium care</p>
+            <p class="ps-desc">The complete transformation. Full hand wash, premium wax, deep wheel + tire clean, full vacuum, steam clean, surface sanitization, spot treatment, odor neutralization, interior windows, door jambs, dash + trim conditioning.</p>
+            <ul class="ps-list">
+              <li>Full exterior hand wash &amp; wax</li><li>Deep interior steam clean</li>
+              <li>Wheel &amp; tire restoration</li><li>Odor neutralization</li>
+              <li>Interior window cleaning</li><li>Dash &amp; trim conditioning</li>
+            </ul>
+            <a class="btn btn-g btn-lg" onclick="go('booking')">Book Signature Shine</a>
+          </div>
+          <div class="ps-price-block">
+            <span class="ps-price">$165</span>
+            <span class="ps-pnote">Starting price</span>
+            <a class="btn btn-o" onclick="go('booking')">Book Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pkg-grid">
+      <div class="pkg r d1">
+        <div class="pkg-top"><h3>Interior Refresh</h3><div class="pkg-pc"><span>$95</span><small>Starting</small></div></div>
+        <p class="pkg-tm">⏱ 30 minutes</p>
+        <p>Full vacuum, steam clean, surface sanitization, spot clean seats + carpet, interior windows, door panels + jambs, dash + trim wipe-down.</p>
+        <a class="btn btn-o" onclick="go('booking')">Book Now</a>
+      </div>
+      <div class="pkg r d2">
+        <div class="pkg-top"><h3>Exterior Clean</h3><div class="pkg-pc"><span>$65</span><small>Starting</small></div></div>
+        <p class="pkg-tm">⏱ 25 minutes</p>
+        <p>Hand wash, bug/tar removal, wheel + tire clean, tire dressing, exterior windows, spray sealant.</p>
+        <a class="btn btn-o" onclick="go('booking')">Book Now</a>
+      </div>
+    </div>
+  </section>
+  <footer><div class="ft" id="ft-services"></div></footer>
+</div>
+
+<!-- ══ GALLERY ══ -->
+<div class="page" id="page-gallery">
+  <div class="ghero">
+    <div class="ghero-img"><img src="images/signatureshine.jpg" alt="Gallery hero — Pointe Mobile Detailing work"></div>
+    <div class="ghero-veil"></div>
+    <div class="ghero-c"><p class="eye eye-c">Our Work</p><h1 class="h2">Detailing <em>Gallery</em></h1></div>
+  </div>
+  <div class="gbody">
+    <div class="gg">
+      <div class="gc r"><img src="images/IMG_2989.PNG" alt="Cadillac CT5-V exterior detail" loading="lazy"><div class="gc-lbl">Cadillac CT5-V</div></div>
+      <div class="gc r d1"><img src="images/B3FF8EFC-8DA2-4A57-86A0-AAEB4063C636.jpg" alt="Wheel and tire detail" loading="lazy"><div class="gc-lbl">Wheel Detail</div></div>
+      <div class="gc r d2"><img src="images/IMG_1723.PNG" alt="SRT interior red leather seats" loading="lazy"><div class="gc-lbl">SRT Interior</div></div>
+      <div class="gc r"><img src="images/fionasilverado.jpg" alt="Chevy Silverado exterior detail" loading="lazy"><div class="gc-lbl">Chevy Silverado</div></div>
+      <div class="gc r d1"><img src="images/IMG_2443.PNG" alt="GMC Terrain exterior" loading="lazy"><div class="gc-lbl">GMC Terrain</div></div>
+      <div class="gc r d2"><img src="images/IMG_1724.PNG" alt="SRT steering wheel interior" loading="lazy"><div class="gc-lbl">SRT Steering</div></div>
+      <div class="gc r"><img src="images/IMG_2720.PNG" alt="Ford Explorer exterior detail" loading="lazy"><div class="gc-lbl">Ford Explorer</div></div>
+      <div class="gc r d1"><img src="images/paulosrt.jpg" alt="Exterior detail result" loading="lazy"><div class="gc-lbl">SRT Exterior</div></div>
+      <div class="gc r d2"><img src="images/IMG_2456.PNG" alt="GMC interior dashboard detail" loading="lazy"><div class="gc-lbl">GMC Interior</div></div>
+      <div class="gc r"><img src="images/signatureshine.jpg" alt="Signature Shine result" loading="lazy"><div class="gc-lbl">Signature Shine</div></div>
+    </div>
+  </div>
+  <footer><div class="ft" id="ft-gallery"></div></footer>
+</div>
+
+<!-- ══ GUARANTEE ══ -->
+<div class="page" id="page-guarantee">
+  <div class="gu-hero">
+    <div class="gu-hero-in">
+      <div class="gu-emblem"><div class="gu-emblem-i">✦</div></div>
+      <p class="eye eye-c">Our Promise</p>
+      <h1 class="h2">100% Satisfaction <em>Guaranteed</em></h1>
+    </div>
+  </div>
+  <div class="gu-body">
+    <div class="gu-block r">
+      <p>At Pointe Mobile Detailing, your satisfaction is our priority. If you are not fully satisfied with your service, please contact us within <strong>24 hours</strong> of your appointment. We will gladly return to address any reasonable concerns related to the original service performed, at no additional cost.</p>
+      <p>This guarantee applies to areas and services that were included in your original booking and does not cover conditions that arise after service completion, such as new dirt, weather exposure, normal wear, or pre-existing damage. Our goal is to ensure every customer is confident in the quality of our work.</p>
+    </div>
+    <div class="gu-pillars">
+      <div class="gp r d1"><div class="gp-n">01</div><h4>Quality First</h4><p>Premium products and proven techniques on every vehicle.</p></div>
+      <div class="gp r d2"><div class="gp-n">02</div><h4>Your Time Matters</h4><p>We come to you. Convenient scheduling, zero waiting.</p></div>
+      <div class="gp r d3"><div class="gp-n">03</div><h4>Always Right</h4><p>Not happy? We make it right. Period.</p></div>
+    </div>
+    <div class="gu-cta r"><a class="btn btn-g btn-lg" onclick="go('booking')">Book With Confidence</a></div>
+  </div>
+  <footer><div class="ft" id="ft-guarantee"></div></footer>
+</div>
+
+<!-- ══ BOOKING ══ -->
+<div class="page" id="page-booking">
+  <div class="bkhero">
+    <div class="bkhero-img"><img src="images/fionasilverado.jpg" alt="Book your detail — Pointe Mobile Detailing"></div>
+    <div class="bkhero-veil"></div>
+    <div class="bkhero-c"><p class="eye eye-c">Schedule</p><h1 class="h2">Book Your <em>Detail</em></h1></div>
+  </div>
+  <div class="bkbody">
+    <div class="bk-hl r">
+      <div>
+        <h3>Recommended: <em>Signature Shine</em></h3>
+        <p>Our most popular package. Full interior + exterior detail with premium wax finish.</p>
+      </div>
+      <div class="bk-price"><span>$165</span><small>Starting · 75 min</small></div>
+    </div>
+    <div class="bk-meta">
+      <div class="bk-cell r d1"><h4>Service Area</h4><p>Grosse Pointe, Grosse Pointe Park, Woods, Farms, Shores, St. Clair Shores, Harper Woods, Detroit, Warren, Sterling Heights.</p></div>
+      <div class="bk-cell r d2"><h4>Scheduling</h4><p>Same-week appointments typically available. Select your service and preferred time below.</p></div>
+    </div>
+    <div class="bk-cal r">
+      <div class="bk-cal-head">
+        <div><h3>Select Your Service</h3><p>Choose a package, pick your time, and we'll handle the rest.</p></div>
+        <a class="btn btn-g" href="https://cal.com/pointemobiledetailing" target="_blank" rel="noopener noreferrer">Open Full Calendar ↗</a>
+      </div>
+      <iframe class="cal" src="https://cal.com/pointemobiledetailing" title="Book mobile car detailing Grosse Pointe" loading="lazy" allow="camera; microphone; payment"></iframe>
+    </div>
+  </div>
+  <footer><div class="ft" id="ft-booking"></div></footer>
+</div>
+
+<!-- FOOTER TEMPLATE -->
+<template id="ftTpl">
+  <div class="ft-top">
+    <div class="ft-brand">
+      <img style="width:38px;height:38px;object-fit:contain;margin-bottom:1rem;filter:drop-shadow(0 0 6px rgba(200,169,110,0.3))" src="images/Logo.png" alt="PMD logo">
+      <span class="ft-brand-n">Pointe Mobile Detailing</span>
+      <p>Grosse Pointe's premier mobile car detailing. Premium results, 100% satisfaction guaranteed.</p>
+    </div>
+    <div class="ft-col">
+      <h5>Navigation</h5>
+      <ul>
+        <li><a onclick="go('home')">Home</a></li>
+        <li><a onclick="go('services')">Services</a></li>
+        <li><a onclick="go('gallery')">Gallery</a></li>
+        <li><a onclick="go('guarantee')">Guarantee</a></li>
+        <li><a onclick="go('booking')">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="mailto:pointemobiledetailing@gmail.com">pointemobiledetailing@gmail.com</a></li>
+        <li>Grosse Pointe, MI</li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-geo">Serving Grosse Pointe · Grosse Pointe Park · Grosse Pointe Woods · Grosse Pointe Farms · Grosse Pointe Shores · St. Clair Shores · Harper Woods · Detroit · Warren · Sterling Heights</div>
+  <div class="ft-base">
+    <p>&copy; 2025 Pointe Mobile Detailing. All rights reserved.</p>
+    <p>Mobile Car Detailing — Grosse Pointe, Michigan</p>
+  </div>
+</template>
+
+<script>
+function go(name){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  const pg=document.getElementById('page-'+name);
+  pg.classList.add('active');
+  pg.classList.remove('page-enter');
+  void pg.offsetWidth;
+  pg.classList.add('page-enter');
+  document.querySelectorAll('[data-page],[data-drawer]').forEach(a=>{
+    a.classList.toggle('active',(a.dataset.page||a.dataset.drawer)===name);
+  });
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('ham').classList.remove('open');
+  window.scrollTo({top:0,behavior:'instant'});
+  setTimeout(observe,80);
+}
+function toggleMenu(){
+  document.getElementById('drawer').classList.toggle('open');
+  document.getElementById('ham').classList.toggle('open');
+}
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40);
+},{passive:true});
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});
+},{threshold:0.06});
+function observe(){
+  document.querySelectorAll('.r,.rl,.rs').forEach(el=>{if(!el.classList.contains('on'))io.observe(el);});
+}
+function injectFooters(){
+  const html=document.getElementById('ftTpl').innerHTML;
+  ['home','services','gallery','guarantee','booking'].forEach(id=>{
+    const el=document.getElementById('ft-'+id);
+    if(el)el.innerHTML=html;
+  });
+}
+injectFooters();
+observe();
+</script>
+</body>
+</html>
