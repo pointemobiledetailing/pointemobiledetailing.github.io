@@ -312,9 +312,22 @@ nav.scrolled{background:rgba(8,8,8,0.96);backdrop-filter:blur(16px);border-botto
 .gall-hero-content{position:relative;z-index:1;text-align:center}
 .gall-body{max-width:1350px;margin:0 auto;padding:3.5rem var(--pad) 5rem}
 .gall-grid{columns:3;column-gap:8px}
-.gall-item{break-inside:avoid;margin-bottom:8px;overflow:hidden}
+.gall-item{break-inside:avoid;margin-bottom:8px;overflow:hidden;position:relative}
 .gall-item img{width:100%;display:block;transition:transform .5s var(--ease)}
 .gall-item:hover img{transform:scale(1.03)}
+.gall-caption{font-size:.72rem;color:rgba(255,255,255,.55);text-align:center;padding:.35rem .5rem .1rem;margin:0}
+/* Before/After slider */
+.gall-ba-item{break-inside:avoid;margin-bottom:8px}
+.ba-wrap{position:relative;overflow:hidden;cursor:col-resize;user-select:none;border-radius:4px;aspect-ratio:4/3}
+.ba-after{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba-before{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:inset(0 50% 0 0)}
+.ba-handle{position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:3px;background:#fff;pointer-events:none}
+.ba-handle::after{content:'◁▷';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;color:#1a1a1a;border-radius:50%;width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-size:.55rem;box-shadow:0 2px 8px rgba(0,0,0,.4);white-space:nowrap;line-height:30px;text-align:center}
+.ba-range{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:col-resize;z-index:10;margin:0;padding:0;-webkit-appearance:none}
+.ba-labels{position:absolute;top:.6rem;left:0;right:0;display:flex;justify-content:space-between;padding:0 .6rem;pointer-events:none}
+.ba-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;background:rgba(0,0,0,.55);color:#fff;padding:.2rem .45rem;border-radius:4px}
+@media(max-width:768px){.gall-grid{columns:2}}
+@media(max-width:480px){.gall-grid{columns:1}}
 
 .guar-hero{min-height:42vh;display:flex;align-items:center;justify-content:center;margin-top:var(--nav-h);background:var(--dark)}
 .guar-hero-content{text-align:center;padding:3.5rem var(--pad)}
@@ -590,7 +603,7 @@ footer{background:var(--black);border-top:1px solid rgba(212,175,55,0.08);paddin
 </div>
 </div>
 <div class="gall-body">
-<div class="gall-grid">
+<div class="gall-grid" id="gall-grid">
 <div class="gall-item"><img src="images/IMG_2989.jpg" alt="Cadillac CT5-V mobile detail Metro Detroit" loading="lazy"></div>
 <div class="gall-item"><img src="images/wheel-detail.jpg" alt="Wheel and tire detailing Grosse Pointe" loading="lazy"></div>
 <div class="gall-item"><img src="images/IMG_1723.jpg" alt="SRT interior steam clean detail" loading="lazy"></div>
@@ -602,6 +615,44 @@ footer{background:var(--black);border-top:1px solid rgba(212,175,55,0.08);paddin
 <div class="gall-item"><img src="images/IMG_2456.jpg" alt="GMC interior detailing Grosse Pointe" loading="lazy"></div>
 <div class="gall-item"><img src="images/signatureshine.jpg" alt="Signature Shine full detail result" loading="lazy"></div>
 </div>
+<script>
+(function(){
+  var DASH = 'https://dashboard.pointemobiledetailing.com';
+  function h(s){ var d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+  function updateSlider(inp){
+    var wrap=inp.closest('.ba-wrap');
+    var before=wrap.querySelector('.ba-before');
+    var handle=wrap.querySelector('.ba-handle');
+    var pct=inp.value;
+    before.style.clipPath='inset(0 '+(100-pct)+'% 0 0)';
+    handle.style.left=pct+'%';
+  }
+  window._baUpdate=updateSlider;
+  fetch(DASH+'/api/public/gallery').then(function(r){return r.ok?r.json():null;}).then(function(items){
+    if(!items||!items.length) return;
+    var grid=document.getElementById('gall-grid');
+    if(!grid) return;
+    grid.innerHTML=items.map(function(item){
+      if(item.type==='before-after'&&item.beforeUrl&&item.afterUrl){
+        return '<div class="gall-ba-item">'+
+          '<div class="ba-wrap">'+
+          '<img class="ba-after" src="'+h(item.afterUrl)+'" alt="'+h(item.altText||item.caption)+'" loading="lazy">'+
+          '<img class="ba-before" src="'+h(item.beforeUrl)+'" alt="Before: '+h(item.altText||item.caption)+'" loading="lazy">'+
+          '<input type="range" class="ba-range" min="0" max="100" value="50" oninput="_baUpdate(this)">'+
+          '<div class="ba-handle"></div>'+
+          '<div class="ba-labels"><span class="ba-label">Before</span><span class="ba-label">After</span></div>'+
+          '</div>'+
+          (item.caption?'<p class="gall-caption">'+h(item.caption)+'</p>':'')+
+          '</div>';
+      }
+      return '<div class="gall-item">'+
+        '<img src="'+h(item.imageUrl)+'" alt="'+h(item.altText||item.caption)+'" loading="lazy">'+
+        (item.caption?'<p class="gall-caption">'+h(item.caption)+'</p>':'')+
+        '</div>';
+    }).join('');
+  }).catch(function(){});
+})();
+</script>
 </div>
 <footer><div class="footer-inner" id="footer-gallery"></div></footer>
 </div>
