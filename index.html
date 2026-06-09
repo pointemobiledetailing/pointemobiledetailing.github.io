@@ -812,7 +812,7 @@ footer{background:var(--black);border-top:1px solid rgba(212,175,55,0.08);paddin
 <p>Choose a package, pick your time, and we'll handle the rest.</p>
 </div>
 <iframe src="https://pmd-dashboard-production.up.railway.app/booking"
-  title="Book a Detail" loading="lazy"></iframe>
+  title="Book a Detail" id="bookingFrame"></iframe>
 </div>
 </div>
 <footer><div class="footer-inner" id="footer-booking"></div></footer>
@@ -931,10 +931,22 @@ injectFooters();
 observe();
 
 // ── Booking: pre-select service in embedded iframe ─────────────────────────
+var _bookingFrameReady = false;
+(function() {
+  var frame = document.getElementById('bookingFrame');
+  if (frame) frame.addEventListener('load', function() { _bookingFrameReady = true; });
+})();
+
 function goToBooking(service) {
-  var base = 'https://pmd-dashboard-production.up.railway.app/booking';
-  var iframe = document.querySelector('#page-booking iframe');
-  if (iframe) iframe.src = service ? (base + '?service=' + encodeURIComponent(service)) : base;
+  var frame = document.getElementById('bookingFrame');
+  if (!frame || !service) return;
+  if (_bookingFrameReady) {
+    // iframe already loaded — send postMessage so booking app switches instantly, no reload
+    frame.contentWindow.postMessage({ type: 'pmd-set-service', service: service }, '*');
+  } else {
+    // iframe still loading — pass the service via URL param so it's picked up on init
+    frame.src = 'https://pmd-dashboard-production.up.railway.app/booking?service=' + encodeURIComponent(service);
+  }
 }
 
 // ── Services Cars/Boats toggle ─────────────────────────────────────────────
