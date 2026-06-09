@@ -1,8 +1,8 @@
 # Pointe Mobile Detailing
 
-> Premier mobile car detailing service serving Metro Detroit — primarily Grosse Pointe and surrounding communities. We come to you. No shop drop-off needed.
+> Premier mobile car and boat detailing service serving Metro Detroit — primarily Grosse Pointe and surrounding communities. We come to you. No shop drop-off needed.
 
-Pointe Mobile Detailing is a professional mobile detailing company based in the Grosse Pointe area of Metro Detroit, Michigan. We specialize in high-quality interior and exterior detailing performed at the customer's home, office, or any location of their choice. Our team brings professional-grade equipment and products directly to your vehicle.
+Pointe Mobile Detailing is a professional mobile detailing company based in the Grosse Pointe area of Metro Detroit, Michigan. We specialize in high-quality interior and exterior detailing for cars and boats, performed at the customer's home, office, dock, or any location of their choice. Our team brings professional-grade equipment and products directly to your vehicle or vessel.
 
 - Website: https://pointemobiledetailing.com
 - Book online: https://pointemobiledetailing.com/#booking
@@ -26,8 +26,8 @@ A deep focus on the inside of your vehicle. Includes full vacuum, steam cleaning
 ### Exterior Clean — starting at $95
 A fast and thorough exterior-only wash. Foam cannon pre-soak, hand wash, rinse, wheel scrub, and towel dry. Ideal for keeping your car looking clean between full details.
 
-### Boat Detailing — pricing by quote only
-Specialized marine detailing package. Includes hull wash and polish, cockpit cleaning, upholstery wipe-down, stainless steel brightening, and engine bay rinse. Protects your boat from water, salt, and UV damage. Contact us directly for a custom quote: pointemobiledetailing@gmail.com
+### Boat Detailing — $10/ft (introductory rate $8/ft for first-time customers)
+Mobile boat detailing priced per foot. We come to your dock, driveway, or storage facility — no haul-out required. Includes rinse, exterior wash, wax, electronic cleaning, deck cleaning, hull cleaning, glass cleaning, in-depth drying, and wet-spot clearing. Final price = boat length (ft) × rate. Book online and select "Boat Detailing": https://pmd-dashboard-production.up.railway.app/booking?service=Boat
 
 ## Vehicle Upcharges
 
@@ -71,7 +71,7 @@ We accept: Cash, Venmo, Stripe (credit/debit card), and Check.
 
 Appointments can be booked online at https://pointemobiledetailing.com/#booking. Customers select their service, vehicle type, date, time, and service location. We come to you — home, office, or anywhere convenient.
 
-For boat detailing, special requests, or pricing questions, email pointemobiledetailing@gmail.com.
+For boat detailing, book at https://pmd-dashboard-production.up.railway.app/booking?service=Boat. For special requests or questions, call 313-686-3911 or email pointemobiledetailing@gmail.com.
 
 ## Frequently Asked Questions
 
@@ -82,7 +82,7 @@ Yes. We are fully mobile. We bring all equipment and supplies to your home, offi
 Book online at https://pointemobiledetailing.com/#booking or email pointemobiledetailing@gmail.com.
 
 **How much does detailing cost?**
-Exterior Clean starts at $95, Interior Refresh at $135, Signature Shine at $185, and Pointe Elite at $275. Larger vehicles have upcharges. Boat detailing is priced by quote.
+Car packages: Exterior Clean starts at $95, Interior Refresh at $135, Signature Shine at $185, and Pointe Elite at $275. Larger vehicles have upcharges. Boat detailing is $10/ft ($8/ft introductory rate for first-time customers).
 
 **What areas do you serve?**
 Metro Detroit, Michigan — primarily Grosse Pointe and surrounding communities.
@@ -94,7 +94,7 @@ Exterior Clean is a basic exterior wash. Interior Refresh focuses solely on the 
 Yes. 20% off weekly, 15% off bi-weekly, 10% off monthly.
 
 **Do you detail boats?**
-Yes. Marine detailing is priced by quote — contact pointemobiledetailing@gmail.com.
+Yes. Boat detailing is $10/ft standard, or $8/ft introductory rate for first-time boat customers. We come to your dock, driveway, or storage — no haul-out needed. Book at https://pmd-dashboard-production.up.railway.app/booking?service=Boat or email pointemobiledetailing@gmail.com.
 
 **What payment methods do you accept?**
 Cash, Venmo, Stripe (credit/debit card), and Check.
@@ -106,7 +106,7 @@ Yes. Severe Odor Treatment add-on (+$20) handles smoke, pet odors, mildew, and o
 Yes. One Step Ceramic Coating add-on (+$45) provides a protective ceramic layer for long-lasting shine and paint protection.
 
 **How long does a detail take?**
-Exterior Clean: ~1 hour. Interior Refresh: ~1.5 hours. Signature Shine: ~2 hours. Pointe Elite: ~3 hours. Boat: ~5 hours.
+Exterior Clean: ~1 hour. Interior Refresh: ~1.5 hours. Signature Shine: ~2 hours. Pointe Elite: ~3 hours. Boat: varies by boat size.
 
 ## About Us
 
