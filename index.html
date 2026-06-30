@@ -138,7 +138,7 @@
     },
     {
       "@type": "Review",
-      "author": {"@type":"Person","name":"Philly"},
+      "author": {"@type":"Person","name":"Philip Loch"},
       "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"},
       "reviewBody": "Detailed my 2006 BMW 330i. Great service and availability. Made my car look brand new again."
     },
@@ -386,8 +386,8 @@ nav.scrolled{background:rgba(8,8,8,0.96);backdrop-filter:blur(16px);border-botto
 .reviews-slider-wrap{position:relative}
 .reviews-track{display:flex;gap:1.2rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:.5rem}
 .reviews-track::-webkit-scrollbar{display:none}
-.review-card{flex:0 0 calc(33.333% - .8rem);scroll-snap-align:start;background:var(--dark2);border:1px solid rgba(255,255,255,.06);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s}
-.review-card:hover{transform:translateY(-4px)}
+.review-card{flex:0 0 calc(33.333% - .8rem);scroll-snap-align:start;background:var(--dark2);border:1px solid rgba(212,175,55,.25);border-top:2px solid var(--gold);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.review-card:hover{transform:none}
 .review-card-img{width:100%;height:130px;object-fit:cover;display:block;flex-shrink:0}
 .review-card-content{padding:1.3rem;display:flex;flex-direction:column;gap:.8rem;flex:1}
 .review-card-top{display:flex;align-items:center;gap:.7rem}
@@ -395,9 +395,12 @@ nav.scrolled{background:rgba(8,8,8,0.96);backdrop-filter:blur(16px);border-botto
 .review-card-stars{color:#fbbc04;font-size:.95rem;letter-spacing:.04em}
 .review-card-text{color:var(--muted);font-style:italic;line-height:1.75;font-size:.88rem;flex:1}
 .review-card-name{font-family:'Playfair Display',serif;font-size:1rem;color:var(--gold)}
-.reviews-nav{display:flex;gap:.6rem;margin-top:1.25rem;justify-content:flex-end}
-.reviews-nav button{background:var(--dark2);border:1px solid rgba(255,255,255,.1);color:var(--text);width:2.4rem;height:2.4rem;border-radius:50%;font-size:1rem;cursor:pointer;transition:background .2s,border-color .2s;display:flex;align-items:center;justify-content:center}
-.reviews-nav button:hover{background:var(--gold);border-color:var(--gold);color:#000}
+.reviews-nav{display:flex;gap:.6rem;justify-content:center;margin-bottom:1.25rem}
+.reviews-nav button{background:transparent;border:1px solid var(--gold);color:var(--gold);width:2.4rem;height:2.4rem;border-radius:50%;font-size:1rem;cursor:pointer;transition:background .2s,color .2s;display:flex;align-items:center;justify-content:center}
+.reviews-nav button:hover{background:var(--gold);color:#000}
+.reviews-cta{text-align:center;margin-top:1.75rem}
+.reviews-cta a{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--gold);color:var(--gold);padding:.6rem 1.4rem;border-radius:6px;font-size:.85rem;font-weight:500;text-decoration:none;letter-spacing:.04em;transition:background .2s,color .2s}
+.reviews-cta a:hover{background:var(--gold);color:#000}
 @media(max-width:768px){.review-card{flex:0 0 85%}.review-card-img{height:110px}}
 
 .serv-hero{padding:calc(var(--nav-h) + 4rem) var(--pad) 4rem;background:var(--dark);text-align:center}
@@ -672,6 +675,10 @@ footer{background:var(--black);border-top:1px solid rgba(212,175,55,0.08);paddin
 <span class="reviews-count">· 16 Google reviews</span>
 </div>
 </div>
+<div class="reviews-nav">
+<button id="reviews-prev" aria-label="Previous review">&#8592;</button>
+<button id="reviews-next" aria-label="Next review">&#8594;</button>
+</div>
 <div class="reviews-slider-wrap">
 <div class="reviews-track" id="reviews-track">
 <div class="review-card reveal d1">
@@ -726,13 +733,15 @@ footer{background:var(--black);border-top:1px solid rgba(212,175,55,0.08);paddin
 <span class="review-card-stars">★★★★★</span>
 </div>
 <p class="review-card-text">"Detailed my 2006 BMW 330i. Great service and availability. Made my car look brand new again."</p>
-<p class="review-card-name">Philly</p>
+<p class="review-card-name">Philip Loch</p>
 </div>
 </div>
 </div>
-<div class="reviews-nav">
-<button id="reviews-prev" aria-label="Previous review">&#8592;</button>
-<button id="reviews-next" aria-label="Next review">&#8594;</button>
+<div class="reviews-cta">
+<a href="https://g.page/r/CV7ahK1iWH7hEBM/review" target="_blank" rel="noopener">
+<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+Leave us a Google Review
+</a>
 </div>
 </div>
 </div>
