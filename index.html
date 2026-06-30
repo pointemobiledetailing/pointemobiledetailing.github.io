@@ -84,7 +84,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Interior Refresh",
-          "description": "Interior Refresh is a mobile interior detail available starting at $135, serving Metro Detroit customers at their home or workplace. Includes full vacuum, steam cleaning, carpet spot treatment, interior surface wipe-down, window cleaning, and odor elimination."
+          "description": "Interior Refresh is a mobile interior detail available starting at $135, serving Metro Detroit customers at their home or workplace. Includes full vacuum, carpet spot treatment, interior surface wipe-down, window cleaning, and odor elimination."
         },
         "price": "135",
         "priceCurrency": "USD",
@@ -126,21 +126,39 @@
   "review": [
     {
       "@type": "Review",
-      "author": {"@type":"Person","name":"Fiona S."},
+      "author": {"@type":"Person","name":"Dennis Reilly"},
       "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"},
-      "reviewBody": "I booked Pointe Mobile Detailing for my Chevy Silverado, and it was a 10/10 experience. Communication was smooth and I was very happy with the results!"
+      "reviewBody": "They detailed my 07 Mustang, had it looking like it just came out of the factory."
     },
     {
       "@type": "Review",
-      "author": {"@type":"Person","name":"Paolo M."},
+      "author": {"@type":"Person","name":"Peter Laethem"},
       "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"},
-      "reviewBody": "Pointe Mobile Detailing did great work on my 392 Durango. Impressed by the results and will book again!"
+      "reviewBody": "Great service on my Acadia. Inexpensive compared to other options and much better detail than any I have previously gotten."
+    },
+    {
+      "@type": "Review",
+      "author": {"@type":"Person","name":"Philly"},
+      "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"},
+      "reviewBody": "Detailed my 2006 BMW 330i. Great service and availability. Made my car look brand new again."
+    },
+    {
+      "@type": "Review",
+      "author": {"@type":"Person","name":"Becky Lettenberger"},
+      "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"},
+      "reviewBody": "Super responsive, thorough and a pleasure to work with!"
+    },
+    {
+      "@type": "Review",
+      "author": {"@type":"Person","name":"Donald Rowlands"},
+      "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"},
+      "reviewBody": "Me and my buddy Steve Larkin got our trucks detailed. They are squeaky clean now."
     }
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5",
-    "reviewCount": "2"
+    "reviewCount": "16"
   },
   "geo": {
     "@type": "GeoCoordinates",
@@ -358,15 +376,27 @@ nav.scrolled{background:rgba(8,8,8,0.96);backdrop-filter:blur(16px);border-botto
 .service-area-strip p{font-size:.72rem;font-weight:500;letter-spacing:.08em;color:var(--muted)}
 .service-area-strip strong{color:var(--gold);font-weight:600}
 
-.testi{max-width:var(--max-w);margin:0 auto;padding:6rem var(--pad)}
-.testi-header{margin-bottom:2.5rem}
-.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem}
-.testi-card{background:var(--dark2);overflow:hidden;transition:transform .35s}
-.testi-card:hover{transform:translateY(-5px)}
-.testi-card img{width:100%;height:200px;object-fit:cover}
-.testi-body{padding:1.6rem}
-.testi-name{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gold);margin-bottom:.5rem}
-.testi-body p{color:var(--muted);font-style:italic;line-height:1.75;font-size:.88rem}
+.reviews{padding:6rem var(--pad);background:var(--dark)}
+.reviews-inner{max-width:var(--max-w);margin:0 auto}
+.reviews-header{margin-bottom:2rem}
+.reviews-aggregate{display:flex;align-items:center;gap:.6rem;margin-top:.75rem;flex-wrap:wrap}
+.reviews-stars{color:#fbbc04;font-size:1.3rem;letter-spacing:.05em}
+.reviews-score{font-size:1.1rem;font-weight:700;color:var(--gold)}
+.reviews-count{font-size:.85rem;color:var(--muted)}
+.reviews-slider-wrap{position:relative}
+.reviews-track{display:flex;gap:1.2rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:.5rem}
+.reviews-track::-webkit-scrollbar{display:none}
+.review-card{flex:0 0 calc(33.333% - .8rem);scroll-snap-align:start;background:var(--dark2);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:1.6rem;display:flex;flex-direction:column;gap:1rem;transition:transform .3s}
+.review-card:hover{transform:translateY(-4px)}
+.review-card-top{display:flex;align-items:center;gap:.7rem}
+.review-g-logo{width:20px;height:20px;flex-shrink:0}
+.review-card-stars{color:#fbbc04;font-size:.95rem;letter-spacing:.04em}
+.review-card-text{color:var(--muted);font-style:italic;line-height:1.75;font-size:.88rem;flex:1}
+.review-card-name{font-family:'Playfair Display',serif;font-size:1rem;color:var(--gold)}
+.reviews-nav{display:flex;gap:.6rem;margin-top:1.25rem;justify-content:flex-end}
+.reviews-nav button{background:var(--dark2);border:1px solid rgba(255,255,255,.1);color:var(--text);width:2.4rem;height:2.4rem;border-radius:50%;font-size:1rem;cursor:pointer;transition:background .2s,border-color .2s;display:flex;align-items:center;justify-content:center}
+.reviews-nav button:hover{background:var(--gold);border-color:var(--gold);color:#000}
+@media(max-width:768px){.review-card{flex:0 0 85%}}
 
 .serv-hero{padding:calc(var(--nav-h) + 4rem) var(--pad) 4rem;background:var(--dark);text-align:center}
 .serv-hero .heading{margin-bottom:.5rem}
@@ -483,7 +513,7 @@ footer{background:var(--black);border-top:1px solid rgba(212,175,55,0.08);paddin
 .nav-links{display:none}
 .hamburger{display:flex}
 .why-grid,.guar-pillars,.book-info{grid-template-columns:1fr}
-.testi-grid{grid-template-columns:1fr}
+.review-card{flex:0 0 90%}
 .gall-grid{columns:2}
 .footer-top{grid-template-columns:1fr;gap:2rem}
 .book-rec{flex-direction:column;text-align:center}
@@ -629,24 +659,63 @@ footer{background:var(--black);border-top:1px solid rgba(212,175,55,0.08);paddin
 </div>
 </section>
 
-<section class="testi">
-<div class="testi-header">
-<span class="label reveal">Client Testimonials</span>
+<section class="reviews">
+<div class="reviews-inner">
+<div class="reviews-header">
+<span class="label reveal">Google Reviews</span>
 <h2 class="heading reveal d1">What Clients <em>Say</em></h2>
-</div>
-<div class="testi-grid">
-<div class="testi-card reveal d1">
-<img src="images/silverado.jpg" alt="Chevy Silverado mobile detailing Grosse Pointe" loading="lazy">
-<div class="testi-body">
-<p class="testi-name"><cite>Fiona S.</cite></p>
-<p>"I booked Pointe Mobile Detailing for my Chevy Silverado, and it was a 10/10 experience. Communication was smooth and I was very happy with the results!"</p>
+<div class="reviews-aggregate reveal d2">
+<span class="reviews-stars">★★★★★</span>
+<span class="reviews-score">5.0</span>
+<span class="reviews-count">· 16 Google reviews</span>
 </div>
 </div>
-<div class="testi-card reveal d2">
-<img src="images/IMG_1724.jpg" alt="Dodge Durango SRT mobile detailing Metro Detroit" loading="lazy">
-<div class="testi-body">
-<p class="testi-name"><cite>Paolo M.</cite></p>
-<p>"Pointe Mobile Detailing did great work on my 392 Durango. Impressed by the results and will book again!"</p>
+<div class="reviews-slider-wrap">
+<div class="reviews-track" id="reviews-track">
+<div class="review-card reveal d1">
+<div class="review-card-top">
+<svg class="review-g-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+<span class="review-card-stars">★★★★★</span>
+</div>
+<p class="review-card-text">"They detailed my 07 Mustang, had it looking like it just came out of the factory."</p>
+<p class="review-card-name">Dennis Reilly</p>
+</div>
+<div class="review-card reveal d2">
+<div class="review-card-top">
+<svg class="review-g-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+<span class="review-card-stars">★★★★★</span>
+</div>
+<p class="review-card-text">"Great service on my Acadia. Inexpensive compared to other options and much better detail than any I have previously gotten."</p>
+<p class="review-card-name">Peter Laethem</p>
+</div>
+<div class="review-card reveal d3">
+<div class="review-card-top">
+<svg class="review-g-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+<span class="review-card-stars">★★★★★</span>
+</div>
+<p class="review-card-text">"Detailed my 2006 BMW 330i. Great service and availability. Made my car look brand new again."</p>
+<p class="review-card-name">Philly</p>
+</div>
+<div class="review-card reveal d1">
+<div class="review-card-top">
+<svg class="review-g-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+<span class="review-card-stars">★★★★★</span>
+</div>
+<p class="review-card-text">"Super responsive, thorough and a pleasure to work with!"</p>
+<p class="review-card-name">Becky Lettenberger</p>
+</div>
+<div class="review-card reveal d2">
+<div class="review-card-top">
+<svg class="review-g-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+<span class="review-card-stars">★★★★★</span>
+</div>
+<p class="review-card-text">"Me and my buddy Steve Larkin got our trucks detailed. They are squeaky clean now."</p>
+<p class="review-card-name">Donald Rowlands</p>
+</div>
+</div>
+<div class="reviews-nav">
+<button id="reviews-prev" aria-label="Previous review">&#8592;</button>
+<button id="reviews-next" aria-label="Next review">&#8594;</button>
 </div>
 </div>
 </div>
@@ -741,7 +810,7 @@ footer{background:var(--black);border-top:1px solid rgba(212,175,55,0.08);paddin
 <div class="pkg-price"><span>$135</span><small>starting</small></div>
 </div>
 <p class="pkg-time">⏱ ~1.5 hours</p>
-<p>A deep focus on the inside of your vehicle. Full vacuum, steam cleaning, carpet spot treatment, interior surface wipe-down, window cleaning, and odor elimination. Great for families or pet owners.</p>
+<p>A deep focus on the inside of your vehicle. Full vacuum, carpet spot treatment, interior surface wipe-down, window cleaning, and odor elimination. Great for families or pet owners.</p>
 <a class="btn btn-outline" href="#booking">Book Now</a>
 </div>
 
@@ -814,7 +883,7 @@ footer{background:var(--black);border-top:1px solid rgba(212,175,55,0.08);paddin
 <div class="gall-grid" id="gall-grid">
 <div class="gall-item"><img src="images/IMG_2989.jpg" alt="Cadillac CT5-V mobile detail Metro Detroit" loading="lazy"></div>
 <div class="gall-item"><img src="images/wheel-detail.jpg" alt="Wheel and tire detailing Grosse Pointe" loading="lazy"></div>
-<div class="gall-item"><img src="images/IMG_1723.jpg" alt="SRT interior steam clean detail" loading="lazy"></div>
+<div class="gall-item"><img src="images/IMG_1723.jpg" alt="SRT interior detail Metro Detroit" loading="lazy"></div>
 <div class="gall-item"><img src="images/silverado.jpg" alt="Chevy Silverado exterior detail Grosse Pointe" loading="lazy"></div>
 <div class="gall-item"><img src="images/IMG_2443.jpg" alt="GMC Terrain mobile detailing Metro Detroit" loading="lazy"></div>
 <div class="gall-item"><img src="images/IMG_1724.jpg" alt="Dodge Durango SRT steering wheel detail" loading="lazy"></div>
@@ -1071,6 +1140,22 @@ window.addEventListener('message', function(e) {
 
 injectFooters();
 observe();
+
+// ── Reviews slider ─────────────────────────────────────────────────────────
+(function(){
+  var track = document.getElementById('reviews-track');
+  if (!track) return;
+  var prev = document.getElementById('reviews-prev');
+  var next = document.getElementById('reviews-next');
+  function cardWidth() {
+    var card = track.querySelector('.review-card');
+    if (!card) return 0;
+    var style = getComputedStyle(track);
+    return card.offsetWidth + parseInt(style.gap || 0);
+  }
+  next && next.addEventListener('click', function() { track.scrollBy({ left: cardWidth(), behavior: 'smooth' }); });
+  prev && prev.addEventListener('click', function() { track.scrollBy({ left: -cardWidth(), behavior: 'smooth' }); });
+}());
 
 // ── Booking: pre-select service in embedded iframe ─────────────────────────
 var _bookingFrameReady = false;
